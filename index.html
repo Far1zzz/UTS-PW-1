@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTS Muhammad Alfa Rizi</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar bg-dark">
+        <div class="container-fluid">
+        <img src="logo.webp" alt="Wonderful Indonesia" width="130px">
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4 col-sm-4 col-xs-12">
+                <h2>Formulir Testimoni</h2>
+                Nama Lengkap <br>
+                <input type="text" name="nama" id="nama" class="form-control"><br>
+                Email <br>
+                <input type="text" name="email" id="email" class="form-control" placeholder="name@exampel.com"><br>
+                Testimoni Kamu
+                <label for="testimoni" class="form-label"></label>
+                <textarea name="testimoni" id="testimoni" class="form-control" rows="3"></textarea> <br>
+
+                <button onclick="send()" class="btn btn-block btn-dark">Kirim</button>
+
+            </div>
+            <div class="col-lg-4 col-sm-4 col-xs-12">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <ul class="list-group" id="listTestimoni1" name="listTestimoni"></ul>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
